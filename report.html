@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<style>
+body {
+  margin: 0;
+  font-family: "avenir", sans-serif;
+  background-color: #EE82EE;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #FFC0CB;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #EE82EE;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.container {
+  position: relative;
+  font-size: xxx-large;
+  font-weight: bold;
+  text-align: center;
+  color: #EE82EE;
+ }
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+iframe{
+margin-left: 200px;
+}
+
+footer {
+  text-align: center;
+  margin: 8px;
+  padding: 3px;
+  background-color: LightPink;
+  color: Black;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="active" href="index.html">HOME</a>
+<a href="aboutus.html">ABOUT US</a>
+  <a href="popstory.html">POP IN BOLOGNA</a>
+  <a href="report.html">REPORT</a>
+</div>
+
+<div class="container">
+  <img src="https://cdn.pixabay.com/photo/2018/03/12/22/15/music-notes-3221097_1280.jpg" alt="Snow" style="width:100%;">
+  <div class="centered">REPORT</div>
+</div>
+
+<div class="content">
+<h1> REPORT:</h1>
+<h2> TOOLS:</h2>
+<ul> 
+<li>POLIFONIA Corpus,</li> 
+<li>MusicBo Catalogue, </li>
+<li>Melody, </li>
+<h4> SPARQL Queries:</h4>
+<li>DBpedia Snorql Query Service, </li> 
+<li>Wikidata Query Service, </li>
+<h4> for the WebSite:</h4>
+<li>W3schools,</li> 
+<li>GitHub,</li> 
+<li>Spotify</li> 
+</ul>
+  
+<h2>MELODY:</h2>
+<style>
+<table {
+  font-family:avenir,
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1.5px solid #FF00FF;
+  text-align: left;
+  padding: 8px;
+  background-color: #FAFAD2;
+}
+
+tr:nth-child(even) {
+  background-color: #FAFAD2;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>STRENTGHS:</th>
+    <th>CHALLENGES:</th>
+    <th>HOW WE FACED SAID CHALLENGES:</th>
+  </tr>
+  <tr>
+    <td>Possibility to create data-stories</td>
+    <td>Sometimes Melody wouldn't save and publish changes</td>
+    <td>We contacted our professor and tutors</td>
+  </tr>
+  <tr>
+    <td>Possibility to retrieve data</td>
+    <td>Melody might be lacking a timeline feature</td>
+    <td>We embedded timelines in our website, directly from the Wikidata Query Service </td>
+  </tr>
+  <tr>
+    <td>Easy-to-use interface</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Map, charts and textbox feature</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Possibility to link pages to our Melody data story e.g. Cesare Cremonini's remarks on theatres</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<head>
+<h2>POLIFONIA Corpus:</h2>
+<style>
+<table {
+  font-family:avenir,
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1.5px solid #FF00FF;
+  text-align: left;
+  padding: 8px;
+  background-color: #FAFAD2;
+}
+
+tr:nth-child(even) {
+  background-color: #FAFAD2;
+}
+</style>
+</head>
+<body>
+
+  <div>
+<table>
+  <tr>
+    <th>STRENTGHS:</th>
+    <th>CHALLENGES:</th>
+    <th>HOW WE FACED SAID CHALLENGES:</th>
+  </tr>
+  <tr>
+    <td>Great extension of knowledge on classical and opera music concerning Bologna</td>
+    <td>Not many datas concerning pop music can be retrieved</td>
+    <td>We searched data on theaters which consitute a shared interest area both in classical and pop music </td>
+  </tr>
+</table>
+
+</div>
+  <div>
+<h1> POP IN BOLOGNA (Giorgia Tonelli - Camilla Guarneri) </h1>
+<h2> METHODOLOGY:</h2>
+<p> A <b> top-down approach </b>has been adopted, meaning that we started from a general analysis concerning music genres in Bologna, we studied Italian pop bands as a whole, and then we focused on the <i> scena bolognese. </i> In doing so, we combined different tools. <br>
+For instance, we conducted an analysis on musicians featured in the <b>Polifonia MusicBo Catalogue </b> which we compared with the results obtained from using <b>DBpedia Snorql Queries</b> to find musicians from Bologna. <br> Moreover, we used <b>Wikidata Query Service</b> to test our queries before retrieving data from <b>Melody</b>. On Melody we compared the number of Italian bands with bands from Bologna. Results showed that <b>2088 Italian bands</b> exist on Melody, whereas <b>0 bands</b> from Bologna are registered. We retrieved data about when were bands formed, a <b>diachronic approach</b> has therefore been adopted in order to investigate influential pop bands from Bologna, starting from the 60's. <b>Pooh, Stadio, Lunapop</b> and <b>Lo Stato Sociale</b> proved to be the most representative of their time. <b>Melody</b> proved to be an essential tool to illustrate the members of each band. When presenting bands on the website, we decided to include a link to their <b>Wikipedia</b> page, as well as a plug-in allowing us to play their music on <b>Spotify</b>. <br>Moreover, a <b>timeline</b> concerning each of these bands discography has been included. Checkboxes concerning <b>a quiz</b> on each band have been featured on the website, in order to allow for an active reading of the article. <br> 
+<br> Moreover, <b>Melody map feature</b> proved essential in retrieving and visually representing data concerning recording studios and theatres. Not only, have theatres  been investigated further on Melody, by analysing theatres in Bologna, but a study on theatres has also been conducted on the <b>MusicBo catalogue</b>. <br> The MusicBo catalogue has proved essential to investigate the use of musical insturments such as guitars and pianos. <br>
+We firts drafted a story on Melody, but we kept working on it allowing us to take inspiration in our daily lives, for instance, we got inspired by Cesare  Cremonini's initiative to use his touring lights to create a suggestive ambiance under <i>San Luca</i> porticoes. We decided to link his instagram page to our story on Melody. <br>
+The website started to be developed right after we first drafted our Melody story. W3 schools and GitHub are the website that were used to this end. Initially, only the HTML language was used, it was crucial to actually have a website  before being able to improve its design. The <b>HTML</b> was easy to master since it had been taught in class. Eventually, further research proved essential to apply the <b>CSS</b> language, which was important to create a navigation bar and a more accessible website. <b>Javascript</b> proved to be useful when creating a slideshow quoting  musicians describing the city of Bologna. 
+</p>
+    
+</body>
+</html>
